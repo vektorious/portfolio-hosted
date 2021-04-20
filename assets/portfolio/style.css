@@ -1,0 +1,154 @@
+body {
+    font-family: "Hind";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Mono";
+    font-weight: bold;
+}
+
+.page {
+    width: 210mm;
+    height: 148.5mm;
+
+    padding: 10mm;
+    margin: 0;
+
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    page-break-after: always;
+}
+
+.page-left {
+    background-image: url(bg-left.svg);
+}
+
+.page-right {
+    font-size: 12pt;
+    background-image: url(bg-right.svg);
+}
+
+.category-image {
+    border: 3px solid #000000;
+    border-radius: 100%;
+    width: 35mm;
+    height: 35mm;
+    overflow: hidden;
+    text-align: center;
+}
+
+.science {
+    background-image: url(science.svg)
+}
+
+.engineering {
+    background-image: url(engineering.svg)
+}
+
+.code {
+    background-image: url(code.svg)
+}
+
+.title {
+    text-align: center;
+}
+
+
+ul.attributes {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.attributes li {
+    line-height: 10mm;
+    font-size: 16pt;
+}
+
+ul.attributes li i {
+    margin-right: 2mm;
+    color: #444;
+}
+
+
+.short_description:before {
+    content: "Kurzbeschreibung";
+    display: block;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    margin-bottom: -3mm;
+}
+
+.learning_goals:before {
+    content: "Lernziele";
+    display: block;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    margin-bottom: -3mm;
+}
+
+.message:before {
+    content: "Was gibts zu entdecken?";
+    display: block;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    margin-bottom: -3mm;
+}
+
+.special_notes:before {
+    content: "Weitere Informationen";
+    display: block;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    margin-bottom: -3mm;
+}
+
+.curriculum:before {
+    content: "Lehrplanreferenzen";
+    display: block;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    margin-bottom: -3mm;
+}
+
+
+@media screen {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+    }
+    .page {
+        margin: 10mm auto;
+        box-shadow: 0 0 5mm rgba(0,0,0,0.2);
+    }
+    .page-left {
+        margin-right: 0;
+    }
+    .page-right {
+        margin-left: 0;
+    }
+    .page-cover-front {
+        margin-left: 0;
+    }
+    .page-cover-back {
+        margin-right: 0;
+    }
+}
+
+@media print {
+    .page {
+        margin: 0;
+    }
+}
+
+@page {
+    size: A5;
+    orientation: landscape;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
