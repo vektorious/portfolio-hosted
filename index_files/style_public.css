@@ -1,0 +1,27 @@
+.attribute-class {
+    display:none;
+}
+
+.attribute-school_subject{
+    display:none;
+}
+
+.learning_goals {
+    display:none;
+}
+
+.curriculum{
+    display:none;
+}
+
+.curriculum_reference{
+    display:none;
+}
+
+.page-cover-front {
+    background-image: url(cover-front.svg);
+}
+
+.page-cover-back {
+    background-image: url(cover-front.svg);
+}
