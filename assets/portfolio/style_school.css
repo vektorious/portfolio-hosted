@@ -6,6 +6,30 @@
     display:none;
 }
 
+.process {
+    display:none;
+}
+
+.attribute-group_size{
+    display:none;
+}
+
+.attribute-duration{
+    display:none;
+}
+
+.attribute-material_costs{
+    display:none;
+}
+
+.attribute-duration_school:after {
+    content: " Dauer";
+    display: inline;
+    font-size: 16pt;
+
+}
+
+
 .curriculum_reference {
     font-size: 12pt;
     list-style-type: none;
@@ -32,9 +56,9 @@
 }
 
 .page-cover-front {
-    background-image: url(cover-front.svg);
+    background-image: url(cover-front-school.svg);
 }
 
 .page-cover-back {
-    background-image: url(cover-front.svg);
+    background-image: url(cover-back.svg);
 }

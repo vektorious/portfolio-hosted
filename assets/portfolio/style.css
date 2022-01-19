@@ -30,11 +30,39 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(bg-right.svg);
 }
 
+.page .pagenum {
+    position: absolute;
+    bottom: 1em;
+}
+.page-left .pagenum {
+    left: 2em;
+}
+.page-right .pagenum {
+    right: 2em;
+}
+.page .pagenum .chapter-title {
+    color: #666;
+    font-style: italic;
+}
+.page.page-left .pagenum .chapter-title {
+    margin-left: .8em;
+}
+.page.page-left .pagenum .chapter-title:before {
+    content: '–';
+    margin-right: .5em;
+}
+.page.page-right .pagenum .chapter-title {
+    margin-right: .8em;
+}
+.page.page-right .pagenum .chapter-title:after {
+    content: '–';
+    margin-left: .5em;
+}
+
 .category-image {
-    border: 3px solid #000000;
     border-radius: 100%;
-    width: 35mm;
-    height: 35mm;
+    width: 38mm;
+    height: 38mm;
     overflow: hidden;
     text-align: center;
 }
@@ -58,6 +86,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
     text-align: center;
+}
+
+.table {
+    font-size: 14pt;
+    margin-top: -.3em;
 }
 
 
@@ -101,6 +134,14 @@ ul.attributes li i {
     margin-bottom: -3mm;
 }
 
+.process:before {
+    content: "Wie ist der Ablauf";
+    display: block;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    margin-bottom: -3mm;
+}
+
 .special_notes:before {
     content: "Weitere Informationen";
     display: block;
@@ -131,12 +172,47 @@ img#process {
 
 #process-spacer{
     float: right;
-    height: calc(100% - 270px);
+    height: calc(100% - 290px);
 }
 
 img#portrait {
-    width: 250px;
+    width: 220px;
     border-radius: 50%;
+}
+
+img#chapter {
+    width: 550px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+img#QR {
+    width: 280px;
+    margin: auto;
+}
+
+.toc {
+    list-style-type: none;
+    padding-left: 0;
+}
+.toc-entry {
+    padding-left: 1em;
+}
+.toc-entry.chapter .title {
+    font-weight: bold;
+}
+.toc-entry.chapter {
+    padding-left: 0;
+}
+.toc li .spacer {
+    border-bottom: 1px solid #ddd;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 1em;
 }
 
 
@@ -166,12 +242,12 @@ img#portrait {
 
 @media print {
     .page {
-        margin: 0;
+        margin: 3mm;
     }
 }
 
 @page {
-    size: A5 landscape;
+    size: 216mm 154mm;
     padding: 0;
     margin: 0;
 }

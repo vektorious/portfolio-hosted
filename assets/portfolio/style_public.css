@@ -2,6 +2,14 @@
     display:none;
 }
 
+.attribute-duration_school{
+    display:none;
+}
+
+.attribute-material_costs{
+    display:none;
+}
+
 .attribute-school_subject{
     display:none;
 }
@@ -23,5 +31,17 @@
 }
 
 .page-cover-back {
+    background-image: url(cover-back.svg);
+}
+
+.add-vspace {
+  margin-top: 40px;
+}
+
+.page-cover-front {
     background-image: url(cover-front.svg);
+}
+
+.page-cover-back {
+    background-image: url(cover-back.svg);
 }
